@@ -1,0 +1,70 @@
+name: foursysteste
+description: A new Flutter project.
+
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  dartz: ^0.10.1
+  get: ^4.6.5
+  http: ^0.13.4
+  equatable: ^2.0.3
+  asuka: ^2.0.0+1
+  mockito: ^5.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.1.11
+
+flutter:
+  uses-material-design: true
+
+scripts: 
+  mobx_build: $runner build
+  mobx_watch: $clean & $get & $runner watch
+  mobx_build_clean: $clean & $get & $runner build --delete-conflicting-outputs
+  mobx_watch_build_clean: $clean & $get & $runner watch --delete-conflicting-outputs
+
+vars: 
+  clean: flutter clean 
+  get: flutter pub get  
+  runner: flutter pub run build_runner
+
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
